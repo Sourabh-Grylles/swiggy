@@ -19,3 +19,11 @@ spec:
         image: 8983795200/java-web-app:1
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 200m
+            memory: 512Mi
+
